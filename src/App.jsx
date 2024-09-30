@@ -74,7 +74,7 @@ function App() {
       totalPoints += parseInt(c.points)
     }
     
-    return [String(parseInt(totaGradePoints / totalWeightPoints)) , totalPoints ]
+    return [String(parseFloat((totaGradePoints / totalWeightPoints).toFixed(2))) , totalPoints ]
   }
   
   const cs = courses.map((course , index) => (
